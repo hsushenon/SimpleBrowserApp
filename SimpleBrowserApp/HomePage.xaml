@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="SimpleBrowserApp.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleBrowserApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Gray">
+    
+    <Page.Resources>
+        <Style x:Key="HomeButtonStyle"  TargetType="Button">
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="Foreground" Value="Gray" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Stretch" />
+            <Setter Property="BorderBrush" Value="Black">
+                <!--<Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="Yellow" Offset="0.0" />
+                        <GradientStop Color="Red" Offset="0.25" />
+                        <GradientStop Color="Blue" Offset="0.75" />
+                        <GradientStop Color="LimeGreen" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Setter.Value>-->
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="1" Grid.Column="1" Name="btnBox1" Style="{StaticResource HomeButtonStyle}" Content="1"  Click="BtnBox1_Click"/>
+        <Button Grid.Row="1" Grid.Column="2" Name="btnBox2" Style="{StaticResource HomeButtonStyle}" Content="2"  Click="BtnBox2_Click" />
+        <Button Grid.Row="1" Grid.Column="3" Name="btnBox3" Style="{StaticResource HomeButtonStyle}" Content="3"  Click="BtnBox3_Click"/>
+        
+        <Button Grid.Row="2" Grid.Column="1" Name="btnBox4" Style="{StaticResource HomeButtonStyle}" Content="4"  Click="BtnBox4_Click"/>
+        <Button Grid.Row="2" Grid.Column="2" Name="btnBox5" Style="{StaticResource HomeButtonStyle}" Content="5"  Click="BtnBox5_Click"/>
+        <Button Grid.Row="2" Grid.Column="3" Name="btnBox6" Style="{StaticResource HomeButtonStyle}" Content="6"  Click="BtnBox6_Click"/>
+        
+        <Button Grid.Row="3" Grid.Column="1" Name="btnBox7" Style="{StaticResource HomeButtonStyle}" Content="7"  Click="BtnBox7_Click"/>
+        <Button Grid.Row="3" Grid.Column="2" Name="btnBox8" Style="{StaticResource HomeButtonStyle}" Content="A"  Click="BtnBox8_Click"/>
+        <Button Grid.Row="3" Grid.Column="3" Name="btnBox9" Style="{StaticResource HomeButtonStyle}" Content="*"  Click="BtnBox9_Click"/>
+    </Grid>
+</Page>
